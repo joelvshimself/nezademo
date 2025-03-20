@@ -1,16 +1,108 @@
-.hero-section {
-    text-align: center;
-    padding: 50px;
-}
+
+
 
 .hero-title {
     font-size: 5rem;
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
 .hero-image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.hero-section {
+    height: 67vh;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    transition: transform 800ms cubic-bezier(0.05,0.43,0.25,0.95);
+
+}
+
+
+/* Contenedor de tarjetas para organizar bigcards y littlecards */
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 90vmin;
+}
+/* Contenedor de cada par de bigcard y littlecard */
+.card-wrapper {
+    position: absolute;
+    width: 40vmin;
+    aspect-ratio: 7/5;
+}
+
+/* Estilo para las tarjetas grandes */
+.bigcard {
+    width: 100%;
+    aspect-ratio: 7/5;
+    background-color: rgba(240, 255, 255, 0.2);
+    border-radius: 2vmin;
+    position: relative;
+}
+
+/* Estilo para las tarjetas pequeñas */
+.littlecard {
+    width: 17vmin;
+    aspect-ratio: 7/5;
+    border-radius: 1vmin;
+    background-color: rgba(240, 255, 255, 0.4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.card-wrapper:nth-child(1) > .bigcard:nth-child(1){
+    transform: translateX(-19%) rotate(-4deg);
+}
+.card-wrapper:nth-child(2) > .bigcard:nth-child(1){
+    transform: translateX(-10%) rotate(-3deg);
+}
+.card-wrapper:nth-child(3) > .bigcard:nth-child(1){
+    transform: translateX(-3%) translateY(0%) rotate(2deg);
+}
+.card-wrapper:nth-child(3) > .bigcard:nth-child(1){
+    transform: translateX(2%) translateY(4%) rotate(4deg);
+}
+
+.card-wrapper:nth-child(1) > .bigcard.active{
+    transform: translate(-76%,15%) rotate(-18deg); 
+}
+
+.card-wrapper:nth-child(2) > .bigcard.active{
+    transform: translate(-25%,1%) rotate(-10deg); 
+}
+.card-wrapper:nth-child(3) > .bigcard.active{
+    transform: translate(25%,3%) rotate(3deg); 
+}
+.card-wrapper:nth-child(4) > .bigcard.active{
+    transform: translate(78%,12%) rotate(16deg); 
+}
+
+.card-wrapper:nth-child(1) > .littlecard.active{
+    transform: translate(-200%,-190%) rotate(16deg); 
+}
+.card-wrapper:nth-child(2) > .littlecard.active{
+    transform: translate(130%,-190%) rotate(-20deg); 
+}
+.card-wrapper:nth-child(3) > .littlecard.active{
+    transform: translate(-180%,100%) rotate(2deg); 
+}
+.card-wrapper:nth-child(4) > .littlecard.active{
+    transform: translate(50%,100%) rotate(-10deg); 
 }

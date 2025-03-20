@@ -5,27 +5,32 @@
     width: 100vw;
     display: flex;
     align-items: center;
-    background: rgba(0,0,0);
+    justify-content: space-between; /* Distribuye logo a la izquierda y menú a la derecha */
+    background: rgba(0, 0, 0);
     border-bottom: #4c4c4c 0.01px solid;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    padding: 10px 20px;
 }
 
 .navbar-logo {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: 20px;
     color: white;
     font-weight: 300;
 }
 
+/* Asegura que los enlaces estén alineados horizontalmente */
 .navbar-links {
     list-style: none;
     display: flex;
     gap: 13px;
+    padding: 0;
+    margin-right: 20px;
+
 }
 
-
+/* Estilos generales para los enlaces */
 .navbar-links li a {
     text-decoration: none;
     color: white;
@@ -34,19 +39,19 @@
     transition: color 0.3s ease-in-out;
 }
 
-
+/* Empuja la opción "Contacto" hacia la derecha */
+.navbar-links li:last-child {
+    margin-left: auto; 
+    margin-right: 10px;
+}
 
 .navbar-links li:last-child a {
     color: red;
     font-size: 0.9rem;
     font-weight: bold;
-    margin : 0 70px;
 }
 
-
-
+/* Cambio de color al pasar el mouse */
 .navbar-links li a:hover {
     color: #ffffff;
 }
-
-
