@@ -1,10 +1,10 @@
 import "../styles/products.css";
 
 const products = [
-    { title: "Sitios Web", image: "./webv.png" },
-    { title: "Apps", image: "./myCover.png" },
-    { title: "Automatizacion", image: "./automatizacion.png" },
-    { title: "Marketing", image: "./ads.png" },
+    { title: "Sitios Web", image: "./webv.webp" },
+    { title: "Apps", image: "./myCover.webp" },
+    { title: "Automatizacion", image: "./automatizacion.webp" },
+    { title: "Marketing", image: "./ads.webp" },
     
     
 

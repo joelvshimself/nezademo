@@ -105,17 +105,18 @@
 
 .card-wrapper:nth-child(1) > .littlecard:nth-child(2){
     
-    background-image: url("/cap/5.png");
+    background-image: url("/5.webp");
 }
 .card-wrapper:nth-child(2) > .littlecard:nth-child(2){
     background-size: 80px; 
-    background-image: url("/cap/neza.png");
+    background-image: url("/neza.webp");
 }
 .card-wrapper:nth-child(3) > .littlecard:nth-child(2){
-    background-image: url("/cap/react.png");
+    background-size: 80%; 
+    background-image: url("reactlogo.webp");
 }
 .card-wrapper:nth-child(4) > .littlecard:nth-child(2){
-    background-image: url("/cap/swift.png");
+    background-image: url("/swift.webp");
 }
 
 
