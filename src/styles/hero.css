@@ -1,6 +1,3 @@
-
-
-
 .hero-title {
     font-size: 5rem;
     font-weight: bold;
@@ -105,15 +102,15 @@
 
 .card-wrapper:nth-child(1) > .littlecard:nth-child(2){
     
-    background-image: url("/5.webp");
+    background-image: url("./5.webp");
 }
 .card-wrapper:nth-child(2) > .littlecard:nth-child(2){
     background-size: 80px; 
-    background-image: url("/neza.webp");
+    background-image: url("./neza.webp");
 }
 .card-wrapper:nth-child(3) > .littlecard:nth-child(2){
     background-size: 80%; 
-    background-image: url("reactlogo.webp");
+    background-image: url("/reactlogo.webp");
 }
 .card-wrapper:nth-child(4) > .littlecard:nth-child(2){
     background-image: url("/swift.webp");
@@ -122,22 +119,22 @@
 
 .card-wrapper:nth-child(1) > .bigcard:nth-child(1){
     background-size: 80%;
-    background-image: url("/cap/1.png");
+    background-image: url("/1.webp");
     transform: translateX(-19%) rotate(-4deg);
 }
 .card-wrapper:nth-child(2) > .bigcard:nth-child(1){
     background-size: 95%;
-    background-image: url("/cap/6.png");
+    background-image: url("6.webp");
 
     transform: translateX(-10%) rotate(-3deg);
 }
 .card-wrapper:nth-child(3) > .bigcard:nth-child(1){
-    background-image: url("/cap/7.png");
+    background-image: url("/7.webp");
 
     transform: translateX(-3%) translateY(0%) rotate(2deg);
 }
 .card-wrapper:nth-child(4) > .bigcard:nth-child(1){
-    background-image: url("/cap/10.png");
+    background-image: url("/10.webp");
 
     transform: translateX(2%) translateY(4%) rotate(4deg);
 }
