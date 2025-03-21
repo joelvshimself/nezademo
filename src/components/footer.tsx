@@ -1,16 +1,16 @@
 import "../styles/Footer.css";
-import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaInstagram} from "react-icons/fa";
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-logo">
-                    <span className="logo-icon">⭐</span>
+                    <img src="./star.png" alt="Logo estrella" className="logo-icon" />
                     <span className="logo-text">Neza</span>
                 </div>
 
-                <div className="footer-columns">
+                {/* <div className="footer-columns">
                     <div className="footer-column">
                         <h4>Company</h4>
                         <ul>
@@ -20,31 +20,12 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="footer-column">
-                        <h4>Communities</h4>
-                        <ul>
-                            <li><a href="#">For Artists</a></li>
-                            <li><a href="#">Developers</a></li>
-                            <li><a href="#">Brand</a></li>
-                            <li><a href="#">Investors</a></li>
-                            <li><a href="#">Vendors</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="footer-column">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">Websites</a></li>
-                            <li><a href="#">Mobile Apps</a></li>
-                        </ul>
-                    </div>
-                </div>
+                </div> */}
 
                 <div className="footer-social">
+                <a href="https://www.instagram.com/neza.startup/" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="social-icon" />
-                    <FaTwitter className="social-icon" />
-                    <FaFacebook className="social-icon" />
+                </a>
                 </div>
             </div>
         </footer>

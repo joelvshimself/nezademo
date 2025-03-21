@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import { useState, MouseEvent } from "react";
 import "../styles/card3.css";
 
-const Card = ({ title, description, imageUrl }) => {
+interface CardProps {
+  title: string;
+  description: string;
+  imageUrl: string;
+}
+
+const Card: React.FC<CardProps> = ({ title, description, imageUrl }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
     const card = e.currentTarget;
     const { left, top, width, height } = card.getBoundingClientRect();
     const x = (e.clientX - left - width / 2) / 25;
@@ -34,22 +40,22 @@ const Card = ({ title, description, imageUrl }) => {
   );
 };
 
-const ThreeDCardDemo = () => {
+const ThreeDCardDemo: React.FC = () => {
   return (
     <>
-    <h2 className="card-title">Nuestro Trabajo</h2>
-    <div className="card-container">
-      <Card
-        title="El Rey del Paste"
-        description="Un restaurante de pastes en Nuevo León con una tradición única."
-        imageUrl="./reydelpaste.png"
-      />
-      <Card
-        title="myCoverApp"
-        description="Una aplicación para la compra masiva de tickets en iOS."
-        imageUrl="./landingcover.png"
-      />
-    </div>
+      <h2 className="card-title">Nuestro Trabajo</h2>
+      <div className="card-container">
+        <Card
+          title="El Rey del Paste"
+          description="Un restaurante de pastes en Nuevo León con una tradición única."
+          imageUrl="./reydelpaste.png"
+        />
+        <Card
+          title="myCoverApp"
+          description="Una aplicación para la compra masiva de tickets en iOS."
+          imageUrl="./landingcover.png"
+        />
+      </div>
     </>
   );
 };

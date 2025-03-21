@@ -20,6 +20,8 @@
 
 .logo-icon {
     margin-right: 10px;
+    height: 1em;
+    width: 1em;
 }
 
 .footer-columns {
@@ -33,6 +35,8 @@
 }
 
 .footer-column ul {
+    font-size: 0.7rem;
+
     list-style: none;
     padding: 0;
 }

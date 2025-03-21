@@ -11,6 +11,8 @@ const Hero = () => {
     }, []);
     return (
         <section className="hero-section">
+            <div className="hero-gradient-background" />
+
             <h1 className="hero-title">NEZA</h1>
 
             <div className="card-group">

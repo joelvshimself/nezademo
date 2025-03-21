@@ -44,13 +44,36 @@ h2{
     line-height: 0px;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    background-color: rgb(65, 207, 82);
     margin-right: 6px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden; 
 }
+
+
+/* En pantallas medianas (tablets/laptops) */
+@media (min-width: 768px) {
+    h3{
+        font-size: 1.3rem;
+    }
+    .item {
+        min-width: 250px;
+        height: 420px;
+    }
+}
+
+/* En pantallas grandes (laptops grandes o monitores) */
+@media (min-width: 1024px) {
+    h3{
+        font-size: 1.8rem;
+    }
+    .item {
+        min-width: 400px;
+        height: 630px;
+    }
+}
+
 
 .item::before {
     content: "";
