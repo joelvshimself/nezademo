@@ -102,11 +102,11 @@
 
 .card-wrapper:nth-child(1) > .littlecard:nth-child(2){
     
-    background-image: url("./5.webp");
+    background-image: url("/5.webp");
 }
 .card-wrapper:nth-child(2) > .littlecard:nth-child(2){
     background-size: 80px; 
-    background-image: url("./neza.webp");
+    background-image: url("/neza.webp");
 }
 .card-wrapper:nth-child(3) > .littlecard:nth-child(2){
     background-size: 80%; 
@@ -124,7 +124,7 @@
 }
 .card-wrapper:nth-child(2) > .bigcard:nth-child(1){
     background-size: 95%;
-    background-image: url("6.webp");
+    background-image: url("/6.webp");
 
     transform: translateX(-10%) rotate(-3deg);
 }
