@@ -1,92 +1,163 @@
-h2{
+/* Estilo general para títulos */
+h2 {
     color: black;
     justify-self: left;
-}
-
-.products-container {
+  }
+  
+  /* Contenedor principal */
+  .products-container {
     background: white;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
-}
-
-.products-container h2 {
+  }
+  
+  .products-container h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-}
-
-
-.wrapper{
-    min-width: 120px;
-    font-weight: 100;
-    border: 0px solid black;
-    color : white;
+  }
+  
+  /* Carrusel horizontal de productos */
+  .wrapper {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
     touch-action: pan-x;
     -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none; /* Para IE/Edge */
-}
-
-.wrapper::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    position: absolute;
-}
-
-.item{
-    position: relative; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    color: white;
+    font-weight: 100;
+    min-width: 120px;
+    gap: 10px;
+  }
+  
+  .wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Estilo de cada tarjeta */
+  .item {
+    position: relative;
     border-radius: 0.6em;
     min-width: 180px;
     height: 350px;
-    line-height: 0px;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    margin-right: 6px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden; 
-}
-
-
-/* En pantallas medianas (tablets/laptops) */
-@media (min-width: 768px) {
-    h3{
-        font-size: 1.3rem;
-    }
-    .item {
-        min-width: 250px;
-        height: 420px;
-    }
-}
-
-/* En pantallas grandes (laptops grandes o monitores) */
-@media (min-width: 1024px) {
-    h3{
-        font-size: 1.8rem;
-    }
-    .item {
-        min-width: 400px;
-        height: 630px;
-    }
-}
-
-
-.item::before {
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  /* Oscurecer la imagen */
+  .item::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); 
-    border-radius: 0.4em;
-}
-
-.item h3 {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0.6em;
+    z-index: 0;
+  }
+  
+  .item h3 {
     position: relative;
     z-index: 1;
-}
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsividad */
+  /* Tablets */
+  @media (min-width: 768px) {
+    .item {
+      min-width: 250px;
+      height: 420px;
+    }
+  
+    .item h3 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Laptops/Monitores */
+  @media (min-width: 1024px) {
+    .item {
+      min-width: 400px;
+      height: 630px;
+    }
+  
+    .item h3 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* ============ Modal ============ */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  
+  .modal-content {
+    background: #1e1e1e;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    position: relative;
+    animation: fadeIn 0.3s ease-out;
+  }
+
+
+    .modal-content h2 {
+        color: rgb(133, 76, 239);
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+  
+  .modal-close {
+    margin-top: 20px;
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .modal-close:hover {
+    background: darkred;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
