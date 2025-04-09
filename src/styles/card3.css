@@ -58,3 +58,17 @@ body {
     transition: transform 0.3s ease-in-out;
   }
   
+  /* Estilo base para los enlaces que envuelven las tarjetas */
+.card-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* También asegurarte de que ningún estado de enlace subraye */
+.card-container a:visited,
+.card-container a:hover,
+.card-container a:focus,
+.card-container a:active {
+  text-decoration: none;
+  color: inherit;
+}
