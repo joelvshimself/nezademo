@@ -7,7 +7,7 @@ const Hero = () => {
     useEffect(() => {
         setTimeout(() => {
             setLoaded(true);
-        }, 1000); // Espera 1 segundo antes de activar la transformación
+        }, 600); // Espera 1 segundo antes de activar la transformación
     }, []);
     return (
         <section className="hero-section">
@@ -22,10 +22,6 @@ const Hero = () => {
                             <div className={`littlecard card ${loaded ? "active" : ""}`}></div>
                         </div>
                     ))}
-                
-                
-                
-
             </div>
             <br />
             <br /><br /><br /><br /><br />
