@@ -13,12 +13,24 @@
     padding: 10px 20px;
 }
 
+/* Estilo para el logo que es un <a> pero no parece link */
 .navbar-logo {
     font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
     font-weight: 300;
-}
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Elimina subrayado incluso en estados activos */
+  .navbar-logo:visited,
+  .navbar-logo:hover,
+  .navbar-logo:focus,
+  .navbar-logo:active {
+    color: white;
+    text-decoration: none;
+  }
+  
 
 /* Asegura que los enlaces estén alineados horizontalmente */
 .navbar-links {
@@ -46,7 +58,7 @@
 }
 
 .navbar-links li:last-child a {
-    color: red;
+    color: rgb(108, 53, 204);
     font-size: 0.9rem;
     font-weight: bold;
 }

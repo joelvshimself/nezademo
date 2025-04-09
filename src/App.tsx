@@ -33,11 +33,18 @@ function App() {
 
   return (
     <>
+      <div id="inicio">
       <Hero />
+      </div>
       <Navbar />
-      <Products />
-      <ThreeDCardDemo />
+      <div id="productos">
+        <Products />
+      </div>
+      <div id="nuestros">
+        <ThreeDCardDemo />
+      </div>
       <Footer />
+
     </>
   )
 }

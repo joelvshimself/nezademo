@@ -3,3 +3,6 @@ body{
     color: #ffffff;
     font-family: "Hanken Grotesk", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
