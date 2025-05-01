@@ -45,11 +45,13 @@ const ThreeDCardDemo: React.FC = () => {
     <>
       <h2 className="card-title">Nuestro Trabajo</h2>
       <div className="card-container">
+        <a href="https://elreydelpaste.vercel.app" target="_blank" rel="noopener noreferrer">
         <Card
           title="El Rey del Paste"
           description="Un restaurante de pastes en Nuevo León con una tradición única."
           imageUrl="./reydelpaste.png"
         />
+        </a>
         <a href="https://mycoverwebs.vercel.app" target="_blank" rel="noopener noreferrer">
         <Card
           title="myCoverApp"
